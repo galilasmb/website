@@ -83,13 +83,13 @@ sections:
           date_start: '2022-01-01'
           date_end: '2023-12-01'
           description: Responsible for data analysis (Data Scientist) and prediction of health systems. I worked on COVID-19 data analysis, helping in decision making in several states of Brazil. In addition to being the backend leader of some solutions made in Python using Django.
-        - title: Back end Developer
-          company: Stone CO
-          company_url: 'https://www.stone.com.br/'
-          location: Rio de Janeiro - RJ. Brazil.
-          date_start: '2022-10-01'
-          date_end: '2023-03-01'
-          description: I worked as a backend developer using the Elixir programming language. I assisted in the structuring of Payment Account Settlement, creating dashboards and reports to identify incidents.
+        # - title: Back end Developer
+        #   company: Stone CO
+        #   company_url: 'https://www.stone.com.br/'
+        #   location: Rio de Janeiro - RJ. Brazil.
+        #   date_start: '2022-10-01'
+        #   date_end: '2023-03-01'
+        #   description: I worked as a backend developer using the Elixir programming language. I assisted in the structuring of Payment Account Settlement, creating dashboards and reports to identify incidents.
         - title: Technology Director
           company: Ensinar Tecnologia
           company_url: 'https://ensinartecnologia.com.br/'
