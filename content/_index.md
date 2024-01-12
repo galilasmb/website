@@ -73,7 +73,7 @@ sections:
         #   company: Ministério da Saúde
         #   company_url: 'https://www.gov.br/saude/pt-br'
         #   location: Recife - PE. Brazil.
-        #   date_start: '2023-01-01'
+        #   date_start: '2023-03-01'
         #   date_end: ''
         #   description: Responsible for data analysis (Data Scientist) and prediction of health systems.
         - title: Head of Data Science
@@ -101,22 +101,29 @@ sections:
           company: Universidade Federal de Sergipe
           company_url: 'https://www.ufs.br/'
           location: Aracaju - SE. Brazil.
-          date_start: '2018-01-03'
+          date_start: '2018-03-01'
           date_end: '2020-03-31'
           description: Professor of Computer Science, in the languages area. Acting in subjects. Compilers; Formal Language; Functional Programming; Imperative Programming; Object Oriented Programming; Data Structure and Computer Fundamentals.
         - title: Technology Director
           company: COESI
           company_url: 'https://coesi.com.br/'
           location: Aracaju - SE. Brazil.
-          date_start: '2016-01-02'
-          date_end: '2020-02-01'
+          date_start: '2016-02-01'
+          date_end: '2020-03-01'
           description: I worked as a technology coordinator, helping to create robotics projects and teaching programming, as well as corporate solutions.
         - title: Computer Science Intern
           company: Ministério Público do Trabalho
           company_url: 'https://www.prt20.mpt.mp.br/'
           location: Aracaju - SE. Brazil.
-          date_start: '2015-01-04'
-          date_end: '2015-01-10'
+          date_start: '2015-11-01'
+          date_end: '2016-08-01'
+          description: Responsible for the technology sector, I worked helping to create solutions and support the systems.
+        - title: Computer Science Intern
+          company: Correios
+          company_url: 'https://www.correios.com.br/'
+          location: Aracaju - SE. Brazil.
+          date_start: '2015-04-01'
+          date_end: '2015-10-01'
           description: Responsible for the technology sector, I worked helping to create solutions and support the systems.
     design:
       columns: '2'
@@ -273,7 +280,7 @@ sections:
       # Contact (add or remove contact options as necessary)
       email: 'gsj@cin.ufpe.br'
       phone: +55 79 99969-7389
-      # appointment_url: 'https://calendly.com'
+      appointment_url: 'https://wa.me/5579999697389'
       address:
         street: Av. Jornalista Anibal Fernandes, s/n.
         city: Recife
@@ -281,7 +288,7 @@ sections:
         postcode: '50740-560'
         country: Brazil
         country_code: BR
-      directions: Enter main Building A and take the stairs on the left to Office B-205, on the second floor.
+      # directions: Enter main Building A and take the stairs on the left to Office B-205, on the second floor.
       office_hours: No fixed office hours; please email or chat to book an appointment
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:

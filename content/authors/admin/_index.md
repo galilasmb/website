@@ -37,7 +37,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in progress in in Computer Science
+    - course: Ph.D. candidate in Computer Science
       institution: Universidade Federal de Pernambuco
       year: 2024
     - course: Master in Computer Science
@@ -127,4 +127,4 @@ social:
 highlight_name: true
 ---
 
-PhD student in Computer Science at UFPE - Federal University of Pernambuco, under supervision of Prof. Dr. [Paulo Henrique Monteiro Borba](https://pauloborba.cin.ufpe.br/). Graduated and master degree in Computer Science from the Federal University of Sergipe. He was technology coordinator at COESI College - College of Orientation and Integrated Studies - and substitute professor at Federal University of Sergipe. Has experience in Computer Science, focusing on Software Engineering, acting on the following subjects: programming languages, programming marathon - ICPC, algorithms, compilers, static analysis.
+Ph.D. candidate in Computer Science at UFPE (Federal University of Pernambuco), currently under the guidance of Prof. Dr. [Paulo Henrique Monteiro Borba](https://pauloborba.cin.ufpe.br/). I hold both a bachelor's and master's degree in Computer Science from the Federal University of Sergipe. My professional journey encompasses various roles, including serving as the technology coordinator at COESI College. In addition to my academic pursuits, I expanded my professional experience as a substitute professor at the [UFS](https://ufs.br/). In this capacity, I actively engaged with students, contributed to the academic community, and shared my expertise in programming languages, programming marathons (specifically ICPC), algorithms, compilers, and static analysis. Moreover, I have ventured into the dynamic field of data science, assuming the role of a researcher in the domain. As a data scientist at [LAIS](https://lais.huol.ufrn.br/).
