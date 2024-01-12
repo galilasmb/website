@@ -44,7 +44,7 @@ education:
       institution: Universidade Federal de Sergipe
       year: 2018
     - course: BSc in Computer Science
-      institution: Universidade Federal de Pernambuco
+      institution: Universidade Federal de Sergipe
       year: 2016
 
 # Skills
