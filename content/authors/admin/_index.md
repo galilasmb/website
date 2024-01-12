@@ -40,7 +40,7 @@ education:
     - course: Ph.D. candidate in Computer Science
       institution: Universidade Federal de Pernambuco
       year: 2024
-    - course: Master in Computer Science
+    - course: MSc in Computer Science
       institution: Universidade Federal de Sergipe
       year: 2018
     - course: BSc in Computer Science
