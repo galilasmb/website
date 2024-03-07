@@ -279,8 +279,6 @@ sections:
       # text: |-
       # Contact (add or remove contact options as necessary)
       email: 'gsj@cin.ufpe.br'
-      phone: +55 79 99969-7389
-      appointment_url: 'https://wa.me/5579999697389'
       address:
         street: Av. Jornalista Anibal Fernandes, s/n.
         city: Recife
