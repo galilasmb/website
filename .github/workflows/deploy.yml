@@ -50,15 +50,16 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --destination _site
       - name: Verify output folder
-        run: ls -la ./public || echo "Public folder is missing!"
+        run: ls -la _site || echo "Public folder is missing!"
       - name: Disable Jekyll
-        run: touch ./public/.nojekyll
+        run: touch _site/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./public
+          path: _site
 
   deploy:
     runs-on: ubuntu-latest
