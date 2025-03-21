@@ -50,14 +50,11 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Debug build output
-        run: ls -la ./public || echo "Public folder is missing!"
+            --baseURL "${{ steps.pages.outputs.base_url }}/"          
       - name: Upload artifact
-        if: success()
         uses: actions/upload-artifact@v3
         with:
-          name: hugo-public
+          name: public
           path: ./public
 
   deploy:
@@ -69,7 +66,7 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
-          name: hugo-public
+          name: public
           path: ./public
       - name: Deploy to GitHub Pages
         id: deployment
