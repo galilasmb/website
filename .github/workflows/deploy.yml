@@ -1,4 +1,4 @@
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
+# Workflow para construir e fazer deploy de um site Hugo no GitHub Pages
 name: Deploy Hugo site to Pages
 
 on:
@@ -29,19 +29,17 @@ jobs:
       - name: Install Hugo CLI
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
-      - name: Checkout
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v4
-      - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass  # Caso precise de Sass para o tema
+
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
@@ -50,14 +48,13 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --destination public \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Disable Jekyll
-        run: touch public/.nojekyll
+
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
-          path: public
+          name: public
+          path: ./public
 
   deploy:
     runs-on: ubuntu-latest
@@ -65,8 +62,14 @@ jobs:
     environment:
       name: github-pages
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: public
+          path: ./public
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
-      - name: Set environment URL
-        run: echo "Deployment URL: ${{ steps.deployment.outputs.page_url }}"
+        with:
+          branch: gh-pages
